@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 300px;
+  width: 300px;
+  background-color: #f0f0f0;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: red;
+  animation: move 6s infinite;
+}
+.square:hover {
+  transform: scale(1.1);
+}
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+    background-color:rgb(255, 0, 0);
+  }
+  25% {
+    transform: translate(500px, 0);
+    background-color: #999;
+  }
+  50% {
+    transform: translate(500px, 500px);
+    background-color: #000;
+  }
+  75% {
+    transform: translate(0, 500px);
+    background-color: orange;
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: red;
+  }
+}
